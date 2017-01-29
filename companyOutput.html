@@ -1,4 +1,5 @@
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -7,7 +8,22 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <link href="style.css" rel="stylesheet">
+<script>
+$(document).ready(function(){
+	$("#passing").animate({
+        left: '0px',
+        opacity: '1'
+    },1000);
+	$(".img-circle").hover(function(){
+		$(this).animate({
+			width: 200,
+			height: 200
+		});
+	});
+});
+</script>
 </head>
 <body>
 <!-- Navigation -->
@@ -41,55 +57,57 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Look Around
-                    <small>see who is passing by</small>
+                    <small id="passing" style="position:relative;left:10px;opacity:0;">see who is passing by</small>
                 </h1>
             </div>
         </div>
 
         <!-- Team Members Row -->
         <div class="row">
+			
             <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r1.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
                 <h3>John Smith <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
 			<div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r2.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Bob Doe <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
 			<div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
-                </h3>
-            </div>
-            <div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r3.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Sil Pan <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
 			<div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r3.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Liam Smith <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
 			<div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
-                </h3>
-            </div><div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r2.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Steve Turn <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
 			<div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r1.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Mark Row <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
 			<div class="col-lg-4 col-sm-6 text-center">
-                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
-                <h3>John Smith <span class="glyphicon glyphicon-file">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r3.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Peter Bo <span class="glyphicon glyphicon-file">
+                </h3>
+            </div>
+			<div class="col-lg-4 col-sm-6 text-center">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r2.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Clark Kent <span class="glyphicon glyphicon-file">
+                </h3>
+            </div>
+			<div class="col-lg-4 col-sm-6 text-center">
+                <a href="index.html" style="color: #000000;text-decoration: none;"><img class="img-circle img-responsive img-center" src="r1.png" style="width:200;height:200;" width=200 height=200 alt=""></a>
+                <h3>Ron Verone <span class="glyphicon glyphicon-file">
                 </h3>
             </div>
         </div>
